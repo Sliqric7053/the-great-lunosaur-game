@@ -3,16 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { GameService } from './game.service';
+import { PaddleComponent } from './paddle/paddle.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PaddleComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [GameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
