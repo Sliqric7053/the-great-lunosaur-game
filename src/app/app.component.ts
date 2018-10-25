@@ -7,10 +7,12 @@ import { GameService } from './game.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, AfterViewInit {
+  image = document.getElementById('ball-img');
+
     /** Template reference to the canvas element */
   @ViewChild('gameScreen') gameScreen: ElementRef;
 
-    /** Canvas 2d ctx */
+    /** Canvas 2d context */
   public ctx: CanvasRenderingContext2D;
 
   constructor(public game: GameService) {}
